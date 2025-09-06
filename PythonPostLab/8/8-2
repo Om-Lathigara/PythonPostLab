@@ -1,0 +1,5 @@
+import math
+x = 5
+y = 3
+value = (6 * (x**2) + 4 * math.sin(x)) / (x - y)
+print("For x=5, y=3, value =", value)

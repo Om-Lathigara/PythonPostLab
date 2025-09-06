@@ -1,0 +1,8 @@
+import math
+def calculate(val):
+    return math.exp(val), math.log2(val), math.sqrt(abs(val))
+num = 4
+a, b, c = calculate(num)
+print("exp:", a)
+print("log2:", b)
+print("sqrt(abs):", c)

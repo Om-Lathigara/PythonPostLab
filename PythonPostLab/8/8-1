@@ -1,0 +1,4 @@
+import math
+degree = 30
+radian = math.radians(degree)
+print(degree, "degrees in radians is", radian)

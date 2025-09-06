@@ -1,0 +1,3 @@
+t = ('Python', 'is', 'fun')
+s = t[0] + " " + t[1] + " " + t[2]
+print(s)

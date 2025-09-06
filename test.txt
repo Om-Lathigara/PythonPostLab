@@ -1,0 +1,66 @@
+import numpy as np
+a = np.arange(1, 26).reshape(5, 5)
+border = np.concatenate([a[0], a[-1], a[1:-1, 0], a[1:-1, -1]])
+print(border)
+
+
+import numpy as np
+b = np.arange(1, 101)
+b[4::5] = -1
+print(b)
+
+
+
+import numpy as np
+n = np.arange(1, 101).reshape(10, 10)
+primes = [x for x in n.flat if x > 1 and all(x % i for i in range(2, int(x**0.5)+1))]
+print(primes)
+
+
+import numpy as np
+angles = np.array([0, 30, 45, 60, 90])
+radians = np.deg2rad(angles)
+identity = np.sin(radians)**2 + np.cos(radians)**2
+print(identity)
+
+
+import numpy as np
+m = np.arange(1, 10).reshape(3, 3)
+print(1/m)
+
+
+import numpy as np
+m = np.arange(1, 17).reshape(4, 4)
+print(m[0])
+print(m[:, -1])
+
+
+import numpy as np
+m = np.ones((5, 5), int)
+m[1:-1, 1:-1] = 0
+print(m)
+
+
+import numpy as np
+arr = np.arange(1, 11)
+arr[arr % 2 == 0] = -1
+print(arr)
+
+
+def maximum(a, b, c):
+    return max(a, b, c)
+
+print(maximum(3, 7, 5))
+
+
+nums = [1,2,5,10,11,14,17,20]
+missing = [x for x in range(nums[0], nums[-1]+1) if x not in nums]
+print(missing)
+
+
+nums = [12, 23]
+units = [x % 10 for x in nums]
+product = 1
+for u in units:
+    product *= u
+print(product)

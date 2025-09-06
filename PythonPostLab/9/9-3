@@ -1,0 +1,10 @@
+import pandas as pd  
+import numpy as np  
+
+series_from_list = pd.Series([10, 20, 30])
+series_from_array = pd.Series(np.array([1, 2, 3, 4]))
+series_from_dict = pd.Series({'x': 5, 'y': 10, 'z': 15})
+
+print("Series from List:\n", series_from_list)
+print("Series from Array:\n", series_from_array)
+print("Series from Dict:\n", series_from_dict)
