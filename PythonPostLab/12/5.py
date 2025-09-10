@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.linspace(0,1,1000,endpoint=False)
+sine = np.sin(2*np.pi*5*t)
+reversed_sine = sine[::-1]
+
+plt.plot(t,sine,label="Original")
+plt.plot(t,reversed_sine,label="Reversed")
+plt.legend()
+plt.title("Original and Reversed 5Hz sine wave")
+plt.show()
