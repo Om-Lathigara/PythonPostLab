@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.linspace(0,1,1000,endpoint=False)
+sine = np.sin(2*np.pi*10*t)
+scaled_sine = 3*sine
+
+plt.plot(t,sine,label="Original")
+plt.plot(t,scaled_sine,label="Scaled")
+plt.legend()
+plt.title("Original and Scaled 10Hz sine wave")
+plt.show()

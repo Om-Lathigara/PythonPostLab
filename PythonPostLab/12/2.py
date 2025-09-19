@@ -1,0 +1,11 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.linspace(0,2,1000,endpoint=False)
+sine = np.sin(2*np.pi*5*t)
+cosine = np.cos(2*np.pi*10*t)
+product_signal = sine * cosine
+
+plt.plot(t,product_signal)
+plt.title("Product of 5Hz sine and 10Hz cosine")
+plt.show()
